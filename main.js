@@ -73,7 +73,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(s => sectionObserver.observe(s));
 
-  /* ---- Pixel cursor trail (fun easter egg) ---- */
+  /* ---- Mobile hamburger menu ---- */
+  const menuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileNav  = document.getElementById('mobile-nav');
+
+  if (menuToggle && mobileNav) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    // Fechar ao clicar em um link do menu
+    mobileNav.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.textContent = '☰';
+      });
+    });
+
+    // Fechar ao clicar fora
+    document.addEventListener('click', (e) => {
+      if (!navbar.contains(e.target) && !mobileNav.contains(e.target)) {
+        mobileNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.textContent = '☰';
+      }
+    });
+  }
+
+
   const trail = [];
   const TRAIL_LEN = 6;
   const COLORS = ['#F5A623','#E8622A','#F7C948','#7B4F9E','#3A6B35'];
@@ -90,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.body.appendChild(dot);
     trail.push({ el: dot, x: 0, y: 0 });
-  }
+  }   
 
   let mx = 0, my = 0;
   window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
