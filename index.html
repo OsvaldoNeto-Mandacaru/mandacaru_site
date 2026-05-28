@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crônicas de Mandacaru — Aprenda Python no Sertão</title>
+  <meta name="description" content="Um jogo de aventura pixel art para ensinar lógica de programação em Python para pessoas com TEA." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicons — substitua com seus próprios -->
+  <!-- <link rel="icon" href="favicon.ico" /> -->
+</head>
+<body>
+
+  <!-- ========================
+       NAVBAR FLUTUANTE
+       ======================== -->
+  <nav id="navbar" role="navigation" aria-label="Menu principal">
+    <a href="#hero" class="nav-logo">
+      Crônicas de<br>Mandacaru
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#features">Funcionalidades</a></li>
+      <li><a href="#characters">Personagens</a></li>
+      <li><a href="#screenshots">Screenshots</a></li>
+      <li><a href="#platforms">Plataformas</a></li>
+    </ul>
+
+    <a href="#LINK_DO_JOGO_AQUI" class="nav-cta">▶ Jogar Agora</a>
+  </nav>
+
+  <!-- ========================
+       HERO
+       ======================== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-eyebrow">
+          ✦ Jogo educativo &nbsp;<span>•</span>&nbsp; TEA Nível 1–2 &nbsp;<span>•</span>&nbsp; Python
+        </p>
+
+        <h1 class="hero-title">
+          Crônicas de<br><em>Mandacaru</em>
+        </h1>
+
+        <p class="hero-subtitle">Aprenda lógica de programação em Python<br>numa aventura pelo sertão nordestino</p>
+
+        <p class="hero-desc">
+          Uma aventura pixel art inclusiva onde você acompanha o Tamanduá e seus amigos
+          explorando o sertão enquanto aprende os fundamentos da programação em Python —
+          projetada especialmente para pessoas com TEA.
+        </p>
+
+        <div class="hero-buttons">
+          <!-- 🔗 Substitua o href com o link do seu jogo -->
+          <a href="#LINK_DO_JOGO_AQUI" class="btn-primary">
+            ▶ &nbsp; Jogar Agora — É Grátis!
+          </a>
+          <a href="#about" class="btn-secondary">
+            Saiba Mais ↓
+          </a>
+        </div>
+      </div>
+
+      <!-- Mascote principal: Tamanduá -->
+      <div class="hero-mascot">
+        <!--
+          Substitua o src abaixo pela imagem do Tamanduá sem fundo.
+          Ex: <img src="content_no_bg.png" alt="Tamanduá, personagem principal" />
+        -->
+        <img
+          src="imgs/content_no_bg.png"
+          alt="Tamanduá — personagem principal de Crônicas de Mandacaru"
+        />
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">role para baixo</div>
+  </section>
+
+  <div class="px-divider"></div>
+
+  <!-- ========================
+       SOBRE O JOGO
+       ======================== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Sprites dos personagens -->
+        <div class="about-sprites reveal">
+          <!-- Personagem explorador -->
+          <div class="sprite-wrap">
+            <img
+              src="imgs/7a169dd8-80bc-4d2c-be41-e0a3cd91d6a1_1.png"
+              alt="Personagem explorador pixel art"
+            />
+            <span class="sprite-label">Niede Guidon</span>
+          </div>
+
+          <!-- Tamanduá — personagem principal (maior) -->
+          <div class="sprite-wrap main">
+            <!--
+              Coloque aqui a sprite do Tamanduá separada se tiver.
+              Enquanto isso usamos o content_no_bg.png como fallback.
+            -->
+            <img
+              src="imgs/content_no_bg.png"
+              alt="Tamanduá — personagem principal"
+            />
+            <span class="sprite-label">★ Tamanduá</span>
+          </div>
+
+          <!-- Dino / mascote secundário -->
+          <div class="sprite-wrap">
+            <img
+              src="imgs/bced13f1-859f-4efb-a60e-73c86781c192_1.png"
+              alt="Dinossauro pixel art"
+            />
+            <span class="sprite-label">Rex Dev</span>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="about-text reveal">
+          <span class="section-tag">// sobre o projeto</span>
+          <h2 class="section-title">
+            Uma aventura feita<br>para <em>todos</em> aprenderem
+          </h2>
+          <p class="section-lead">
+            Crônicas de Mandacaru nasce da pesquisa sobre como tornar o ensino de programação
+            acessível e divertido para pessoas com Transtorno do Espectro Autista (TEA)
+            nível 1 e 2 de suporte.
+          </p>
+          <p style="color:var(--muted); font-size:0.95rem; margin-bottom:1.5rem;">
+            Através de missões, puzzles e narrativa contextualizada no sertão nordestino,
+            o jogador aprende lógica computacional e sintaxe Python de forma gradual,
+            previsível e visualmente acessível — respeitando as necessidades sensoriais
+            e cognitivas de cada pessoa.
+          </p>
+
+          <!-- 📌 ESPAÇO PARA INFORMAÇÕES ADICIONAIS -->
+          <div class="about-tags">
+            <span class="tag"> Python</span>
+            <span class="tag">♿ Acessível</span>
+            <span class="tag">🌵 Sertão Nordestino</span>
+            <span class="tag">🎮 Gamificação</span>
+            <!-- Adicione mais tags conforme necessário -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="px-divider"></div>
+
+  <!-- ========================
+       FUNCIONALIDADES
+       ======================== -->
+  <section id="features">
+    <div class="container">
+      <span class="section-tag reveal">// funcionalidades</span>
+      <h2 class="section-title reveal">Por que <em>Mandacaru</em>?</h2>
+      <p class="section-lead reveal">
+        Projetado com base em pesquisa sobre acessibilidade e aprendizagem para pessoas neurodivergentes.
+      </p>
+
+      <div class="features-grid">
+
+        <div class="feature-card reveal">
+          <span class="feature-icon">🧩</span>
+          <h3>Aprendizagem Progressiva</h3>
+          <p>
+            Conteúdo dividido em microetapas curtas com feedback imediato a cada interação,
+            ideal para manutenção de atenção e progresso gradual.
+          </p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-icon">♿</span>
+          <h3>Design Inclusivo (TEA)</h3>
+          <p>
+            Interface previsível e estruturada, paleta acessível, controle de ritmo
+            autodirigido e sem pressão de tempo — pensado para quem tem hipersensibilidade.
+          </p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-icon">🐍</span>
+          <h3>Python Real</h3>
+          <p>
+            O jogador escreve código Python de verdade dentro do jogo, aprendendo
+            variáveis, loops, condicionais e funções em contexto narrativo.
+          </p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-icon">🌵</span>
+          <h3>Identidade Nordestina</h3>
+          <p>
+            Cenários, personagens e histórias inspirados no sertão brasileiro —
+            criando conexão cultural e pertencimento para o público-alvo.
+          </p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-icon">🏆</span>
+          <h3>Sistema de Conquistas</h3>
+          <p>
+            <!-- 📌 ADICIONE INFORMAÇÕES SOBRE SEU SISTEMA DE CONQUISTAS AQUI -->
+            Recompensas visuais e marcos de progresso motivam a continuidade
+            sem gerar ansiedade por falha.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="px-divider"></div>
+
+  <!-- ========================
+       PERSONAGENS
+       ======================== -->
+ 
+
+  <!-- ========================
+       SCREENSHOTS DO JOGO
+       ======================== -->
+  <section id="screenshots">
+    <div class="container">
+      <span class="section-tag reveal">// galeria</span>
+      <h2 class="section-title reveal">Veja o <em>jogo em ação</em></h2>
+      <p class="section-lead reveal">
+        Clique nos espaços abaixo para adicionar prints do jogo.
+      </p>
+
+      <div class="screenshots-grid">
+        <!--
+          📌 COMO ADICIONAR SCREENSHOTS:
+          1. Substitua cada bloco abaixo por: <img src="SUA_IMAGEM.png" alt="Descrição" />
+          2. OU deixe os slots clicáveis para upload via navegador (modo de edição)
+          3. Para remover o modo de upload, substitua o div.screenshot-slot por uma <img>
+        -->
+
+        <div class="screenshot-slot reveal" title="Clique para adicionar screenshot">
+          <img src="imgs/img site 1.png" alt="">
+        </div>
+
+        <div class="screenshot-slot reveal" title="Clique para adicionar screenshot">
+          <img src="imgs/img site 2.png" alt="">
+        </div>
+
+        <div class="screenshot-slot reveal" title="Clique para adicionar screenshot">
+          <img src="imgs/img site 3.png" alt="">
+        </div>
+
+        <div class="screenshot-slot reveal" title="Clique para adicionar screenshot">
+          <img src="imgs/img site 4.png" alt="">
+        </div>
+
+        <div class="screenshot-slot reveal" title="Clique para adicionar screenshot">
+          <img src="imgs/img site 5.png" alt="">
+        </div>
+
+        <div class="screenshot-slot reveal" title="Clique para adicionar screenshot">
+          <img src="imgs/img site 6.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="px-divider"></div>
+
+  <!-- ========================
+       PLATAFORMAS & CTA FINAL
+       ======================== -->
+  <section id="platforms">
+    <div class="container">
+      <span class="section-tag reveal" style="display:block;text-align:center;">// disponível em</span>
+      <h2 class="section-title reveal" style="text-align:center;">
+        Jogue onde<br><em>você quiser</em>
+      </h2>
+
+      <div class="platforms-row reveal">
+        <div class="platform-badge">
+          <span class="icon">️🖥️</span>
+          <span>Desktop</span>
+        </div>
+        <div class="platform-badge">
+          <span class="icon">🌐</span>
+          <span>Navegador</span>
+        </div>
+      </div>
+
+      <!-- CTA FINAL -->
+      <div class="cta-box reveal">
+        <h2>Pronto para a aventura<br>pelo sertão?</h2>
+        <p>
+          Gratuito, inclusivo e divertido. Comece a aprender Python agora mesmo
+          com o Tamanduá e seus amigos!
+        </p>
+
+        <!-- 🔗 Substitua o href com o link real do jogo -->
+        <a href="#LINK_DO_JOGO_AQUI" class="btn-primary" style="margin:0 auto; display:inline-flex;">
+          ▶ &nbsp; Jogar Crônicas de Mandacaru
+        </a>
+
+        <!-- 📌 ADICIONE LINKS PARA LOJAS (App Store / Google Play) SE NECESSÁRIO -->
+        <!--
+        <div style="margin-top:1.5rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="#" class="btn-secondary">Google Play</a>
+          <a href="#" class="btn-secondary">App Store</a>
+        </div>
+        -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================
+       FOOTER
+       ======================== -->
+  <footer>
+    <span class="footer-logo">Crônicas de Mandacaru</span>
+
+    <ul class="footer-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#features">Funcionalidades</a></li>
+      <li><a href="#characters">Personagens</a></li>
+      <li><a href="#screenshots">Screenshots</a></li>
+      <!-- 📌 ADICIONE LINKS PARA REDES SOCIAIS / CONTATO -->
+      <!-- <li><a href="#">Instagram</a></li> -->
+      <!-- <li><a href="#">Contato</a></li> -->
+    </ul>
+
+    <p>
+      © 2025 Crônicas de Mandacaru &nbsp;·&nbsp;
+      Desenvolvido com ♥ para o sertão &nbsp;·&nbsp;
+      <!-- 📌 ADICIONE NOME DA EQUIPE / INSTITUIÇÃO -->
+      [Seu nome / equipe / instituição aqui]
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
